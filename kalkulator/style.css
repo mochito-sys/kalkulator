@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #000000;
+}
+
+.wrapper {
+  width: 360px;
+  height: 600px;
+  background-color: #1c1c1c;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.screen {
+  background-color: #000000;
+  color: white;
+  font-size: 48px;
+  text-align: right;
+  padding: 20px;
+  border-radius: 15px;
+  min-height: 80px;
+  overflow-x: auto;
+}
+
+.calc-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calc-button-row {
+  display: flex;
+  gap: 15px;
+}
+
+.calc-button {
+  flex: 1;
+  height: 60px;
+  font-size: 24px;
+  border: none;
+  border-radius: 30px;
+  background-color: #333333;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.calc-button:active {
+  background-color: #4d4d4d;
+}
+
+.calc-button.double {
+  flex: 2;
+}
+
+.calc-button.triple {
+  flex: 3;
+}
+
+.calc-button:last-child {
+  background-color: #ff9500;
+  color: white;
+}
+
+.calc-button:last-child:active {
+  background-color: #cc7a00;
+}
